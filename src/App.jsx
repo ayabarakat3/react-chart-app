@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import BarChart from './components/BarChart/BarChart';
-import LineChart from './components/LineChart/LineChart';
-import ScatterChart from './components/ScatterChart/ScatterChart';
-import BubbleChart from './components/BubbleChart/BubbleChart';
+import BarChart from './src/src/components/BarChart';
+import LineChart from './src/src/components/LineChart';
+import ScatterChart from './src/src/components/ScatterChart';
+import BubbleChart from './src/src/components/BubbleChart';
 import './App.css';
 
 function App() {

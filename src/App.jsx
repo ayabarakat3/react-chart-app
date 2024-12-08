@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import BarChart from './components/BarChart';
-import LineChart from './components/LineChart';
-import ScatterChart from './components/ScatterChart';
-import BubbleChart from './components/BubbleChart';
+import BarChart from './components/BarChart/BarChart';
+import LineChart from './components/LineChart/LineChart';
+import ScatterChart from './components/ScatterChart/ScatterChart';
+import BubbleChart from './components/BubbleChart/BubbleChart';
 import './App.css';
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
   }, []);
 
   if (!chartData) {
-    return <div>Media loading...</div>;
+    return <div>Loading...</div>;
   }
 
   return (
-    <div>
+    <div className="App">
       <h1>Interactive Charts with React and Chart.js</h1>
       <BarChart data={chartData} />
       <LineChart data={chartData} />
